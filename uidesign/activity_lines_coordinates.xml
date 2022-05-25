@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/departure_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Departure Place"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/posX1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude-Of-Departure"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_below="@+id/departure_text"/>
+
+    <EditText
+        android:id="@+id/posY1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude-Of-Departure"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_below="@+id/posX1"/>
+
+    <TextView
+        android:id="@+id/arrival_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arrival Place"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_below="@id/posY1"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/posX2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arrival_text"
+        android:fontFamily="@font/nunito_bold"
+        android:hint="Latitude-Of-Arrival" />
+
+    <EditText
+        android:id="@+id/posY2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/posX2"
+        android:fontFamily="@font/nunito_bold"
+        android:hint="Longitude-Of-Arrival" />
+
+</RelativeLayout>
