@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgTicket"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_picture_in_picture_96"
+                app:tint="@color/orange700" />
+
+            <TextView
+                android:id="@+id/tvTicketTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Company 1"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgTicket"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDirection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito"
+                android:text="Ankara to Istanbul"
+                app:layout_constraintStart_toStartOf="@+id/tvTicketTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvTicketTitle" />
+
+            <TextView
+                android:id="@+id/tvDepTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito"
+                android:text="Departure: 24.03.2018   10:00"
+                app:layout_constraintStart_toStartOf="@+id/tvTicketTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDirection" />
+
+            <TextView
+                android:id="@+id/tvArrTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito"
+                android:text="Arrival:       24.03.2018   14:00"
+                app:layout_constraintStart_toStartOf="@+id/tvTicketTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvDepTime" />
+
+            <TextView
+                android:id="@+id/tvWagonNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito"
+                android:text="Wagon no: 3"
+                app:layout_constraintStart_toStartOf="@+id/tvTicketTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvArrTime" />
+
+            <TextView
+                android:id="@+id/tvSeatNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito"
+                android:text="Seat no: "
+                app:layout_constraintStart_toStartOf="@+id/tvTicketTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvWagonNo" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/nunito"
+                android:text="Price: "
+                app:layout_constraintStart_toStartOf="@+id/tvTicketTitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvSeatNo" />
+
+            <TextView
+                android:id="@+id/tvSeatNoValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nunito"
+                android:text="G-02"
+                android:textColor="@color/lightBlue900"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSeatNo"
+                app:layout_constraintStart_toEndOf="@+id/tvSeatNo"
+                app:layout_constraintTop_toTopOf="@+id/tvSeatNo"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvPriceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nunito"
+                android:text="30$"
+                android:textColor="@color/teal800"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPrice"
+                app:layout_constraintStart_toEndOf="@+id/tvSeatNo"
+                app:layout_constraintTop_toTopOf="@+id/tvPrice"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imgLine"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+                app:srcCompat="@color/gray600" />
+
+            <TextView
+                android:id="@+id/tvFeedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Your feedback: "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgLine" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFeedback">
+
+                <ImageView
+                    android:id="@+id/imgStar1"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_star_48"
+                    app:tint="@color/yellow600" />
+
+                <ImageView
+                    android:id="@+id/imgStar2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgStar1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_star_48"
+                    app:tint="@color/yellow600" />
+
+                <ImageView
+                    android:id="@+id/imgStar3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imgStar2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_star_48"
+                    app:tint="@color/yellow600" />
+
+                <ImageView
+                    android:id="@+id/imgStar4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintStart_toEndOf="@+id/imgStar3"
+                    app:srcCompat="@drawable/ic_baseline_star_48"
+                    app:tint="@color/yellow600" />
+
+                <ImageView
+                    android:id="@+id/imgStar5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imgStar4"
+                    app:srcCompat="@drawable/ic_baseline_star_outline_48"
+                    app:tint="@color/yellow600"
+                    tools:layout_editor_absoluteY="0dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/etFeedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gray_light_rounded_corner_s"
+                android:ems="10"
+                android:hint="Your feedback here"
+                android:inputType="textPersonName"
+                android:padding="8dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvFeedback"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
