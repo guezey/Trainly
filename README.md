@@ -1,6 +1,6 @@
 # Trainly
 
-**Trainly** was my CS102 term project, on which my three teammates and I spent four months.
+**Trainly**, an Android app to organize train travels, was my CS102 term project, on which my three teammates and I spent four months.
 
 We designed and implemented the whole project by ourselves from ground to end. 
 The project's main aim was to let us demonstrate the outcomes of our 1<sup>st</sup>-year Computer Science classes CS101-2 [^1] at Bilkent University.
